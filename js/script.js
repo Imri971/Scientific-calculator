@@ -23,9 +23,14 @@ function calculator() {
         number.textContent = "log("+lastNb ;
         
      }else if (this.id == "square") { //Condition du carré
+         c = number.textContent;
          number.textContent = carre(number.textContent);
+         number_mini.textContent = c+ "^2 =";
+         
      }else if (this.id == "racine") { //Condition de la racine carre
+         c = number.textContent;
          number.textContent = Math.sqrt(number.textContent);
+         number_mini.textContent = "racine("+c+") =";
      }else if (this.textContent == "x") { //remplacer le signe x en * pour l'opération
         number.textContent = number.textContent  + "*";
         

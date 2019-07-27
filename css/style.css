@@ -70,7 +70,7 @@ h1 {
     margin: 5px;
     height: 24px;
     position: relative;
-    
+    overflow: hidden;
 }
 
 #number:focus {
