@@ -25,12 +25,12 @@ function calculator() {
      }else if (this.id == "square") { //Condition du carré
          c = number.textContent;
          number.textContent = carre(number.textContent);
-         number_mini.textContent = c+ "^2 =";
+         number_mini.textContent = c+ "\u00b2 =";
          
      }else if (this.id == "racine") { //Condition de la racine carre
          c = number.textContent;
          number.textContent = Math.sqrt(number.textContent);
-         number_mini.textContent = "racine("+c+") =";
+         number_mini.textContent = "\u221a"+c+" =";
      }else if (this.textContent == "x") { //remplacer le signe x en * pour l'opération
         number.textContent = number.textContent  + "*";
         
@@ -42,6 +42,7 @@ function calculator() {
         }else {
         
          number.textContent = sup.substring(0, sup.length - 1); //Supprimer le dernier caractère
+         number_mini.textContent = number.textContent;
         }
     }else if (this.textContent == "=") { //Condition pour le calcul
 
